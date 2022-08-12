@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+   <!--  <link rel="icon" type="image/png" href="images/favicon-32x32.png"> -->
 
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -31,10 +31,32 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="90">
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="icon-box">
+                        <i class="material-icons">check</i>
+                    </div>
+                    <h4 class="modal-title w-100" id="modal-h4">Awesome!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" id="modal-p">Your message has been sent! <br> I'll be in touch with you soon.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-block" data-dismiss="modal" id="modal-btn-ok">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
     <!-- Navbar Section Start -->
 
     <nav class="navbar navbar-expand-lg navbar-bg fixed-top">
-        <a class="navbar-brand nav-link" href="#">Home</a>
+        <a class="navbar-brand nav-underline nav-link" href="#">JACS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,65 +64,94 @@
             <!-- ml-auto will push all navs links to the right side-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about">About Me<span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-underline" href="#about">About Me<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#project">Projects</a>
+                    <a class="nav-link nav-underline" href="#project">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link  nav-underline" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link  nav-underline" href="#about">Tools</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link nav-underline" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link d-inline-block btn btn-info btn-large btn-green-border"
-                        href="#" target="_blank">
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Navbar Section End -->
-
-    <!-- HOME Start-->
-    <div id="home" class="row align-items-center">
-        <div class="container-fluid">
-            <div class="landing-text">
-                <h6>Hello, my name is</h6>
-                <h1>James Anthony C. Suico</h1>
-                <h2>A Web Developer.</h2>
-                <br>
-                <a class="btn btn-info btn-large btn-green-border" href="#contact" id="get-in-touch">
-                    Get in Touch
+                    href="#" target="_blank">
+                    Resume
                 </a>
-            </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Navbar Section End -->
+
+<!-- HOME Start-->
+<div id="home" class="row align-items-center">
+    <div class="container-fluid">
+        <div class="landing-text">
+            <h6>Hello, my name is</h6>
+            <h1>James Anthony C. Suico</h1>
+            <h2>A Web Developer.</h2>
+            <br>
+            <a class="btn btn-info btn-large btn-green-border" href="#contact" id="get-in-touch">
+                Get in Touch
+            </a>
         </div>
     </div>
-    <!-- HOME End-->
+</div>
+<!-- HOME End-->
 
-    <!-- ABOUT ME Start -->
-    <section id="about" class="d-flex align-items-center">
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col-12 col-md-4 img-wrapper">
-                    <img src="images/james.jpg" alt="">
+<!-- ABOUT ME Start -->
+<section id="about" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-12 col-md-4 img-wrapper">
+                <img src="images/james.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8">
+                <h3>About Me</h3>
+                <hr class="header-underline">
+
+                <div class="text-left">
+                    <p>Hello! I am James Anthony Suico, a web designer situated in Cebu City.
+                    </p>
+                    <p>I am an industrial automation programmer with experience in hardware-based programming like Programmable Logic Controllers (PLC) and Human Machine Interface (HMI).</p>
+                    <p>I am a career shifter who wants to learn about coding, especially in software and web development. I have enrolled myself in an interactive bootcamp so that I will be ready to be deployed in any field of software engineering path.</p>
+                    <p>Coding? I found it enjoyable and challenging at the same time!</p>
+                    <p>My aspiration in life is to become a globally competitive  <em><b>Software/Web Developer</b></em> and build meaningful products that provide an excellent experience to users.</p>
+                    <p>Here are technologies I've worked with so far:</p>
                 </div>
-                <div class="col-12 col-md-8">
-                    <h3>About Me</h3>
-                    <hr class="header-underline">
-                    
-                    <div class="text-left">
-                        <p>Hello! I am James Anthony Suico, a web designer situated in Cebu City.
-                        </p>
-                        <p>I am an industrial automation programmer with experience in hardware-based programming like Programmable Logic Controllers (PLC) and Human Machine Interface (HMI).</p>
-                        <p>I am a career shifter who wants to learn about coding, especially in software and web development. I have enrolled myself in an interactive bootcamp so that I will be ready to be deployed in any field of software engineering path.</p>
-                        <p>Coding? I found it enjoyable and challenging at the same time!</p>
-                        <p>My aspiration in life is to become a globally competitive  <em><b>Software/Web Developer</b></em> and build meaningful products that provide an excellent experience to users.</p>
+                <div id="tools" class="col-12">
+                    <i class="fab fa-css3" title="CSS3"></i>
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-js" title="Javascript ES6"></i>
+                    <i class="fab fa-bootstrap" title="Bootstrap4"></i>
+
+                    <!-- React and Node JS : for Future Addition to skills -->
+                    <i class="fab fa-node"></i>
+                    <!-- <i class="fab fa-react"></i> -->
+
+                    <!-- MongoDB icon -->
+                        <!-- <span title="MongoDB">
+                            <svg id="mongodb-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70"
+                                height="70" viewBox="0 0 48 48" style=" fill:#000000;">
+                                <path fill="#5d4037"
+                                    d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z">
+                                </path>
+                                <path fill="#4caf50"
+                                    d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z">
+                                </path>
+                                <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
+                                <path fill="#4caf50"
+                                    d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z">
+                                </path>
+                                <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+                            </svg>
+                        </span> -->
                     </div>
                     
                 </div>
@@ -117,30 +168,32 @@
                     <hr class="header-underline project-header">
                 </div>
             </div>
+            <!-- edited -->
             <div class="row text-center">        
-                <div class="card-padding row col-lg-4">
-                        <div class="card-shadow">
-                            <div class="card-content">
-                                <img src="./images/sign-up.PNG" class="card-img-top" alt="...">
-                                <div class="card-text">
-                                    <a class="mt-3 project-name" href="#">Sign-Up Page</a>
-                                    <p class="card-text">Posting Data via API</p>
-                                    <h4 class="text-center mb-3">Technologies:</h4>
-                                    <p>HTML5, CSS3, Bootstrap 4, Javascript, NodeJs(ExpressJS)
+                <div class="card-padding col-sm-12 col-lg-4">
+
+                    <div class="card-shadow">
+                        <div class="card-content">
+                            <img src="./images/sign-up.PNG" class="card-img-top" alt="...">
+                            <div class="card-text">
+                                <a class="mt-3 project-name" href="#">Sign-Up Page</a>
+                                <p class="card-text">Posting Data via API</p>
+                                <h4 class="text-center mb-3">Technologies:</h4>
+                                <p>HTML5, CSS3, Bootstrap 4, Javascript, NodeJs(ExpressJS)
                                 </div>
                             </div>
                         </div>
                         <div class="content-overlay">
                             <div class="view-code">
-                            <a href="#" target="_blank"
-                            class="btn btn-info btn-large btn-green-border">View Code</a>
+                                <a href="#" target="_blank"
+                                class="btn btn-info btn-large btn-green-border">View Code</a>
                             </div>
                         </div>
-                    
-                </div>
+
+                    </div>
 
 
-                <div class="card-padding row col-lg-4">
+                    <div class="card-padding col-sm-12 col-lg-4">
                         <div class="card-shadow">
                             <div class="card-content">
                                 <img src="./images/weather-app.webp" class="card-img-top" alt="...">
@@ -149,45 +202,108 @@
                                     <p class="card-text">Posting Data via API</p>
                                     <h4 class="text-center mb-3">Technologies:</h4>
                                     <p>HTML5, CSS3, Bootstrap 4, Javascript, NodeJs(ExpressJS)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-overlay">
+                                <div class="view-code">
+                                    <a href="#" target="_blank"
+                                    class="btn btn-info btn-large btn-green-border">View Code</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card-padding col-sm-12 col-lg-4">
+                            <div class="card-shadow">
+                                <div class="card-content">
+                                    <img src="./images/MERN1.webp" class="card-img-top" alt="...">
+                                    <div class="card-text">
+                                        <a class="mt-3 project-name" href="#">MERN</a>
+                                        <p class="card-text">Full-Stack Development Capstone Project</p>
+                                        <h4 class="text-center mb-3">Technologies:</h4>
+                                        <p>HTML5, CSS3, Bootstrap 4, Javascript, NodeJs(ExpressJS)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-overlay">
+                                    <div class="view-code">
+                                        <a href="#" target="_blank"
+                                        class="btn btn-info btn-large btn-green-border">View Code</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content-overlay">
-                            <div class="view-code">
-                            <a href="#" target="_blank"
-                            class="btn btn-info btn-large btn-green-border">View Code</a>
-                            </div>
-                        </div>
-                    
-                </div>
 
-                <div class="card-padding row col-lg-4">
-                        <div class="card-shadow">
-                            <div class="card-content">
-                                <img src="./images/MERN1.webp" class="card-img-top" alt="...">
-                                <div class="card-text">
-                                    <a class="mt-3 project-name" href="#">MERN</a>
-                                    <p class="card-text">Full-Stack Development Capstone Project</p>
-                                    <h4 class="text-center mb-3">Technologies:</h4>
-                                    <p>HTML5, CSS3, Bootstrap 4, Javascript, NodeJs(ExpressJS)
+                    </div>
+                </div>
+            </section>
+            <!-- Projects End-->
+            <!-- Experience Start-->
+
+            <section id="experience" class="section-padding">
+                <div class="container">
+                    <div class="row text-center">
+                        <h3 class="col-12">Experience &nbsp</h3>
+                        <hr class="header-underline">
+
+                        <!-- Timeline Experience -->
+                        <ul class="timeline mt-4">
+                            <li>
+                                <div class="timeline-badge primary"><i class="fas fa-laptop-code"></i></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Automation Specialist</h4>
+                                        <h6><em>PLC&SCADA Programmer</em></h6>
+                                        <h6>Exceed Automation Engineering Services (2020~2021)</h6>
+                                        <br>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Hardware Programming (PLC- Programmable Logic Controllers), HMI(Human-Machine
+                                            Interface) Graphics Development. SCADA(Supervisory Control And Data Acquisition)
+                                            Systems.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="content-overlay">
-                            <div class="view-code">
-                            <a href="#" target="_blank"
-                            class="btn btn-info btn-large btn-green-border">View Code</a>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge success"><i class="fas fa-tools"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Technical Staff</h4>
+                                        <h6><em>Maintenance, PLC Programming</em></h6>
+                                        <h6>Universal Robina Corporation (2021-Present)</h6>
+                                        <br>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Machine Repair, Commissioning, PLC programming for function improvements and
+                                        troubleshooting.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge primary"><i class="fas fa-laptop-code"></i></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Automation Engineer</h4>
+                                        <h6><em>PLC&SCADA Programmer</em></h6>
+                                        <h6>TECSquare Solutions Inc. (2018~2020)</h6>
+                                        <br>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Hardware Programming (PLC- Programmable Logic Controllers), HMI(Human-Machine
+                                            Interface) Graphics Development. SCADA(Supervisory Control And Data Acquisition)
+                                            Systems, Scripting using Python3.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Projects End-->
-    <!-- Experience Start-->
-    <section id="experience" class="d-flex align-items-center">
+            </section>
+            <!-- OLD DESIGN -->
+  <!--   <section id="experience" class="d-flex align-items-center">
         <div class="container-fluid">
             <h3 class="col-12 experience-header">Experience</h3>
             <div class="row">
@@ -214,107 +330,129 @@
           </div>  
         </div>
 
-  </section>
-           
+    </section> -->
+
     <!-- Experience End-->
 
-  <!-- Contact Me Start -->
-  <div id="contact" class="bg-dark text-light min-vh-100 p-5 text-center">
+    <!-- Contact Me Start -->
+    <section id="contact">
+        <section class="section-padding" id="contact-reveal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5 text-center">
+                        <h3>CONTACT</h3>
+                        <hr class="header-underline">
+                    </div>
+                    <div class="col-12 col-md-7 text-left px-4">
+                        <h4 class="mb-5">Get In Touch</h4>
 
-    <h2 class="mb-3">Contact Me</h2>
-    <div class=" d-flex justify-content-center">
-        <div class="bg-primary col-sm-12 col-md-8 col-xl-6">
-            <!-- Form Block -->
-
-            <div class="mb-3 p-3 ">
-                <div class="text-center">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Name</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput2">Email Address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput3">Contact Number</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="+63 900 000 0000">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput4">Concern</label>
-                            <select class="form-control" id="exampleFormControlInput4">
-                                <option>Quotation</option>
-                                <option>Appointment</option>
-                                <option>Follow-up</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput5">Message</label>
-                            <textarea class="form-control" id="exampleFormControlInput5" rows="5"></textarea>
-                        </div>
-                    </form>
-
-                    <!-- Button Trigger Modal -->
-
-                    <!-- <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Send Email</button> -->
-
-                    <!-- Modal -->
-
-                    <!-- Button Trigger Modal -->
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">
-                        Send Email
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade text-dark" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Thank you for contacting us!</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Message Succesfuly Sent.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
+                        <!-- FORM FOR CONTACT -->
+                        <form action="/" id="form-details">
+                            <div class="form-group" id="contact-form">
+                                <input type="text" class="form-control px-3 py-4" placeholder="Your Name" id="name"
+                                minlength="3" required>
                             </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control px-3 py-4" placeholder="Your Email" id="email"
+                                required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control px-3 py-4" placeholder="Your Phone Number"
+                                id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control px-3 py-4" cols="30" rows="10"
+                                placeholder="Write a Message" id="message"></textarea>
+                            </div>
+                            <!--  -->
+                            <div class="form-group d-flex justify-content-end">
+                                <button type="button" class="btn btn-send-msg btn-lg"
+                                data-toggle="modal" data-target="#staticBackdrop"  >Send</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-12 col-md-5 text-left px-5">
+                        <h4 class="mb-5">My Contact Details</h4>
+                        <div class="d-flex contact-wrap">
+                            <i class="fas fa-envelope"></i>&nbsp ajsuico96@gmail.com
+                        </div>
+                        <div class="d-flex contact-wrap">
+                            <i class="fas fa-phone-square-alt"></i>&nbsp +639958547381
+                        </div>
+
+                        <div class="d-flex contact-wrap">
+                            <i class="fas fa-map-marker-alt"></i>&nbsp T-029 North Road, Jagobiao Mandaue City, Cebu, Philippines
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </section>
+    <!-- Contact Me End -->
+    <!--  -->
+    <!-- Modal -->
+    <div class="modal fade text-dark" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you for contacting us!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Message Succesfuly Sent.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Modal End -->
+    <footer class="container-fluid">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <p>Designed & Built by James Anthony C. Suico</p>
+                <p class="mb-0">Copyright ©2022 All Rights Reserved</p>
+            </div>
+
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com/jamesanthony.suico.5/" target="_blank"><i
+                    class="fab fa-facebook social-media-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/james-anthony-suico-053352166" target="_blank"><i
+                        class="fab fa-linkedin social-media-icon"></i></a>
+                        <a href="https://github.com/ajsuico" target="_blank"><i
+                            class="fab fa-github-alt social-media-icon"></i></a>
+                        </div>
+                    </div>
+
+                </footer>
+
+                <div class="social-media-links">
+                    <ul class="social-media-ul">
+                        <li><a href="https://www.facebook.com/jamesanthony.suico.5/" target="_blank"><i
+                            class="fab fa-facebook social-media-icon"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/james-anthony-suico-053352166" target="_blank"><i
+                                class="fab fa-linkedin social-media-icon"></i></a></li>
+                                <li><a href="https://github.com/ajsuico" target="_blank"><i
+                                    class="fab fa-github-alt social-media-icon"></i></a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+    <!-- <div id="preloader">
+        <div id="loader"></div>
+    </div> -->
 
 
 
-</div>
-<!-- Contact Me End -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
